@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Electron-With-Socket</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+            body{
+                padding: 0;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                background-color: #888;
+            }
+            button{
+                padding : 20px;
+                font-size: 1.25rem;
+                cursor: pointer;
+                transition: 1s ease-in;
+            }
+            button:hover{
+                transition: 1s ease-in;
+                background-color: rgb(138, 138, 138);
+            }
+            h1{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id='h'></h1>
+        <button id='btn'>FETCH</button>
+    </body>
+    <script defer src="./renderKey.js"></script>
+    <script defer src="../dist/main.js"></script>
+</html>
