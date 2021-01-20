@@ -10,3 +10,7 @@ Before even creating window fork a worker thread
 once worker thread is forked inform master thread to initialize browser window
 now whenever there's a request from render-process to process synchronous data which might lead UI to 
 freeze, just call the worker thread and wait untill work is processed later foward the data to render process.
+
+```
+|Render Process| <=> |Main Process (Browser Window)| <=> |Thread for computation|
+```
