@@ -1,25 +1,16 @@
 {
-  "name": "electron-socket",
+  "name": "electron-worker-thread-boilerplate",
   "version": "1.0.0",
   "description": "",
   "main": "electron.js",
   "dependencies": {
-    "concurrently": "^5.3.0",
-    "crypto-js": "^4.0.0",
     "electron": "^11.2.0",
-    "express": "^4.17.1",
-    "http": "0.0.1-security",
-    "socket.io": "^3.1.0",
-    "socket.io-client": "^3.1.0",
-    "webpack": "^5.15.0",
-    "ws": "^7.4.2"
   },
   "devDependencies": {
     "electron": "^4.0.5",
-    "webpack-cli": "^4.3.1"
   },
   "scripts": {
-    "dev": "webpack && concurrently \"electron main.js\" \"node socket.js\""
+    "start": "electron main"
   },
   "author": "",
   "license": "ISC"
